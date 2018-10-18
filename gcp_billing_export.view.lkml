@@ -1,11 +1,12 @@
 view: gcp_billing_export {
   derived_table: {
+    sql_trigger_value: select CURRENT_DATE() ;;
     sql:
       SELECT
         *,
         ROW_NUMBER() OVER () pk
       FROM
-        gcp_logs.gcp_billing_export_v1_#####_#####_######
+        finance.gcp_billing_export_v1_00EC07_73556A_1B67B6
       WHERE
         {% condition date_filter %} _PARTITIONTIME {% endcondition %} ;;
   }

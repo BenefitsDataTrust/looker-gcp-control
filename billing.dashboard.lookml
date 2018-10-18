@@ -20,7 +20,7 @@
       label: Budget
       expression: '750'
       value_format:
-      value_format_name: gbp_0
+      value_format_name: usd_0
       _kind_hint: dimension
       _type_hint: number
     custom_color_enabled: false
@@ -55,7 +55,7 @@
       label: Budget
       expression: '750'
       value_format:
-      value_format_name: gbp_0
+      value_format_name: usd_0
       _kind_hint: dimension
       _type_hint: number
     custom_color_enabled: false
@@ -535,7 +535,7 @@
       label: Total Predicted Costs
       expression: max(${predicted_cumulative_cost})
       value_format:
-      value_format_name: gbp_0
+      value_format_name: usd_0
       _kind_hint: dimension
       _type_hint: number
     custom_color_enabled: false
